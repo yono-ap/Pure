@@ -31,4 +31,10 @@ class PureTests: XCTestCase {
         }
     }
 
+    func testLocalizable() {
+        print(NSLocalizedString("welcome", comment: "No such text."))
+        print(NSLocalizedString("The following is a list of test programs.", comment: ""))
+        print("The following is a list of test programs.".localized)
+    }
+
 }
