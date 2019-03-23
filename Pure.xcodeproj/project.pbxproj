@@ -14,6 +14,7 @@
 		973B92FA2245A8A200FC557A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973B92F82245A8A200FC557A /* LaunchScreen.storyboard */; };
 		973B93052245A8A200FC557A /* PureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B93042245A8A200FC557A /* PureTests.swift */; };
 		973B93102245A8A200FC557A /* PureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B930F2245A8A200FC557A /* PureUITests.swift */; };
+		97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		973B930B2245A8A200FC557A /* PureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		973B930F2245A8A200FC557A /* PureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureUITests.swift; sourceTree = "<group>"; };
 		973B93112245A8A200FC557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+AppLog.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		973B92EE2245A8A100FC557A /* Pure */ = {
 			isa = PBXGroup;
 			children = (
+				97F5B1892245D7F0009C2125 /* Extensions */,
 				973B92EF2245A8A100FC557A /* AppDelegate.swift */,
 				973B92F12245A8A100FC557A /* ViewController.swift */,
 				973B92F32245A8A100FC557A /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				973B93112245A8A200FC557A /* Info.plist */,
 			);
 			path = PureUITests;
+			sourceTree = "<group>";
+		};
+		97F5B1892245D7F0009C2125 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			files = (
 				973B92F22245A8A100FC557A /* ViewController.swift in Sources */,
 				973B92F02245A8A100FC557A /* AppDelegate.swift in Sources */,
+				97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
