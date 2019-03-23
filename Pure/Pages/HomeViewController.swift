@@ -32,11 +32,11 @@ class HomeViewController: BaseViewController {
     }
 
     let items: [SectionItem] = [
-        SectionItem(title: "Communications", cellItems: [
+        SectionItem(title: "Communications".localized, cellItems: [
             CellItem(title: "API GET", name: "v11"),
             CellItem(title: "JSON", name: "v12")
             ]),
-        SectionItem(title: "Views", cellItems: [
+        SectionItem(title: "Views".localized, cellItems: [
             CellItem(title: "Button", name: "v21"),
             CellItem(title: "Entry", name: "v22")
             ])
@@ -46,7 +46,7 @@ class HomeViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        labelDescription.text = "The following is a list of test programs."
+        labelDescription.text = "The following is a list of test programs.".localized
     }
 
 }

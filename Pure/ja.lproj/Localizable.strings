@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Pure
+
+  Created by yoshiyuki ono on 2019/03/23.
+  Copyright © 2019 yono-ap. All rights reserved.
+*/
+
+// MARK: - Home
+"The following is a list of test programs." = "以下はテストプログラムのリストです。";
+"Communications" = "通信機能";
+"Views" = "コントロール";
