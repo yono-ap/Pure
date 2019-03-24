@@ -33,7 +33,7 @@ class HomeViewController: BaseViewController {
 
     let items: [SectionItem] = [
         SectionItem(title: "Communications".localized, cellItems: [
-            CellItem(title: "API GET", name: "v11"),
+            CellItem(title: "API GET", name: "Pure.ApiGetViewController"),
             CellItem(title: "JSON", name: "v12")
             ]),
         SectionItem(title: "Views".localized, cellItems: [
@@ -54,9 +54,20 @@ class HomeViewController: BaseViewController {
 // MARK: - UITableViewDelegate
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let title = "\(items[indexPath.section].cellItems[indexPath.row].title)"
-        appLog("index = \(indexPath.section) : \(indexPath.row) \(title)")
         tableView.deselectRow(at: indexPath, animated: true)
+
+        let item = items[indexPath.section].cellItems[indexPath.row]
+        appLog("index = \(indexPath.section) : \(indexPath.row) \(item.title)")
+
+        let vcType = NSClassFromString(item.name) as? UIViewController.Type
+        guard let aClass = vcType else {
+            appLog("No such class \(item.name)")
+            return
+        }
+
+        let viewController = aClass.init()
+        viewController.title = item.title
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
 
