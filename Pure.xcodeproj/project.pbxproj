@@ -14,6 +14,8 @@
 		973B92FA2245A8A200FC557A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973B92F82245A8A200FC557A /* LaunchScreen.storyboard */; };
 		973B93052245A8A200FC557A /* PureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B93042245A8A200FC557A /* PureTests.swift */; };
 		973B93102245A8A200FC557A /* PureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B930F2245A8A200FC557A /* PureUITests.swift */; };
+		9741A446224701F0003965E7 /* ApiGetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9741A444224701F0003965E7 /* ApiGetViewController.swift */; };
+		9741A447224701F0003965E7 /* ApiGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9741A445224701F0003965E7 /* ApiGetViewController.xib */; };
 		97F3568A2246367C00B5A62D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97F3568C2246367C00B5A62D /* Localizable.strings */; };
 		97F356902246394F00B5A62D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F3568F2246394F00B5A62D /* String+Localized.swift */; };
 		97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */; };
@@ -53,6 +55,8 @@
 		973B930B2245A8A200FC557A /* PureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		973B930F2245A8A200FC557A /* PureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureUITests.swift; sourceTree = "<group>"; };
 		973B93112245A8A200FC557A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9741A444224701F0003965E7 /* ApiGetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiGetViewController.swift; sourceTree = "<group>"; };
+		9741A445224701F0003965E7 /* ApiGetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApiGetViewController.xib; sourceTree = "<group>"; };
 		97F3568B2246367C00B5A62D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97F3568D224636AE00B5A62D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97F3568F2246394F00B5A62D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				97F5B1912245FD3D009C2125 /* BaseViewController.swift */,
 				97F5B18D2245FD02009C2125 /* HomeViewController.swift */,
 				97F5B18E2245FD02009C2125 /* HomeViewController.xib */,
+				9741A444224701F0003965E7 /* ApiGetViewController.swift */,
+				9741A445224701F0003965E7 /* ApiGetViewController.xib */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9741A447224701F0003965E7 /* ApiGetViewController.xib in Resources */,
 				97F3568A2246367C00B5A62D /* Localizable.strings in Resources */,
 				973B92FA2245A8A200FC557A /* LaunchScreen.storyboard in Resources */,
 				973B92F72245A8A200FC557A /* Assets.xcassets in Resources */,
@@ -318,6 +325,7 @@
 				97F356902246394F00B5A62D /* String+Localized.swift in Sources */,
 				97F5B1922245FD3D009C2125 /* BaseViewController.swift in Sources */,
 				973B92F22245A8A100FC557A /* ViewController.swift in Sources */,
+				9741A446224701F0003965E7 /* ApiGetViewController.swift in Sources */,
 				973B92F02245A8A100FC557A /* AppDelegate.swift in Sources */,
 				97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */,
 				97F5B18F2245FD02009C2125 /* HomeViewController.swift in Sources */,
