@@ -14,4 +14,16 @@ class BaseViewController: UIViewController {
 
         appTrace()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        appTrace()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        appTrace()
+    }
 }
