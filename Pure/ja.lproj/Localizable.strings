@@ -10,3 +10,6 @@
 "The following is a list of test programs." = "以下はテストプログラムのリストです。";
 "Communications" = "通信機能";
 "Views" = "コントロール";
+
+// MARK: - API Get
+"This page uses GitHub API as an example of URLSession." = "このページはURLSessionの例としてGitHub APIを使用します。";
