@@ -34,7 +34,7 @@ class HomeViewController: BaseViewController {
     let items: [SectionItem] = [
         SectionItem(title: "Communications".localized, cellItems: [
             CellItem(title: "API GET", name: "Pure.ApiGetViewController"),
-            CellItem(title: "JSON", name: "v12")
+            CellItem(title: "JSON", name: "Pure.JsonViewController")
             ]),
         SectionItem(title: "Views".localized, cellItems: [
             CellItem(title: "Button", name: "v21"),
