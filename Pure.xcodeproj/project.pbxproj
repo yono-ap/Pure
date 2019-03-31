@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97364C88224F792E00D65C41 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97364C87224F792E00D65C41 /* UIViewController+Alert.swift */; };
+		97364C8C224F7DF700D65C41 /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97364C8B224F7DF700D65C41 /* ServerApi.swift */; };
+		97364C8E22503E3400D65C41 /* UIViewController+ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97364C8D22503E3400D65C41 /* UIViewController+ErrorHandler.swift */; };
 		973B92F02245A8A100FC557A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B92EF2245A8A100FC557A /* AppDelegate.swift */; };
 		973B92F22245A8A100FC557A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973B92F12245A8A100FC557A /* ViewController.swift */; };
 		973B92F52245A8A100FC557A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 973B92F32245A8A100FC557A /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		9741A447224701F0003965E7 /* ApiGetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9741A445224701F0003965E7 /* ApiGetViewController.xib */; };
 		9751D858224A3C4800D5B67E /* JsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9751D856224A3C4800D5B67E /* JsonViewController.swift */; };
 		9751D859224A3C4800D5B67E /* JsonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9751D857224A3C4800D5B67E /* JsonViewController.xib */; };
+		9751D85C224A3D2300D5B67E /* ApiRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9751D85B224A3D2300D5B67E /* ApiRepository.swift */; };
 		97F3568A2246367C00B5A62D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 97F3568C2246367C00B5A62D /* Localizable.strings */; };
 		97F356902246394F00B5A62D /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F3568F2246394F00B5A62D /* String+Localized.swift */; };
 		97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */; };
@@ -44,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		97364C87224F792E00D65C41 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		97364C8B224F7DF700D65C41 /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
+		97364C8D22503E3400D65C41 /* UIViewController+ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorHandler.swift"; sourceTree = "<group>"; };
 		973B92EC2245A8A100FC557A /* Pure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		973B92EF2245A8A100FC557A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		973B92F12245A8A100FC557A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +68,7 @@
 		9741A445224701F0003965E7 /* ApiGetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApiGetViewController.xib; sourceTree = "<group>"; };
 		9751D856224A3C4800D5B67E /* JsonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonViewController.swift; sourceTree = "<group>"; };
 		9751D857224A3C4800D5B67E /* JsonViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JsonViewController.xib; sourceTree = "<group>"; };
+		9751D85B224A3D2300D5B67E /* ApiRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRepository.swift; sourceTree = "<group>"; };
 		97F3568B2246367C00B5A62D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97F3568D224636AE00B5A62D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		97F3568F2246394F00B5A62D /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
@@ -118,6 +126,7 @@
 		973B92EE2245A8A100FC557A /* Pure */ = {
 			isa = PBXGroup;
 			children = (
+				9751D85A224A3CFE00D5B67E /* Apis */,
 				97F5B1892245D7F0009C2125 /* Extensions */,
 				97F5B18C2245FCE3009C2125 /* Pages */,
 				973B92EF2245A8A100FC557A /* AppDelegate.swift */,
@@ -149,11 +158,22 @@
 			path = PureUITests;
 			sourceTree = "<group>";
 		};
+		9751D85A224A3CFE00D5B67E /* Apis */ = {
+			isa = PBXGroup;
+			children = (
+				9751D85B224A3D2300D5B67E /* ApiRepository.swift */,
+				97364C8B224F7DF700D65C41 /* ServerApi.swift */,
+			);
+			path = Apis;
+			sourceTree = "<group>";
+		};
 		97F5B1892245D7F0009C2125 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				97F5B18A2245D81B009C2125 /* NSObject+AppLog.swift */,
 				97F3568F2246394F00B5A62D /* String+Localized.swift */,
+				97364C87224F792E00D65C41 /* UIViewController+Alert.swift */,
+				97364C8D22503E3400D65C41 /* UIViewController+ErrorHandler.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -334,9 +354,13 @@
 				973B92F22245A8A100FC557A /* ViewController.swift in Sources */,
 				9741A446224701F0003965E7 /* ApiGetViewController.swift in Sources */,
 				9751D858224A3C4800D5B67E /* JsonViewController.swift in Sources */,
+				97364C88224F792E00D65C41 /* UIViewController+Alert.swift in Sources */,
 				973B92F02245A8A100FC557A /* AppDelegate.swift in Sources */,
 				97F5B18B2245D81B009C2125 /* NSObject+AppLog.swift in Sources */,
+				97364C8C224F7DF700D65C41 /* ServerApi.swift in Sources */,
 				97F5B18F2245FD02009C2125 /* HomeViewController.swift in Sources */,
+				97364C8E22503E3400D65C41 /* UIViewController+ErrorHandler.swift in Sources */,
+				9751D85C224A3D2300D5B67E /* ApiRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
